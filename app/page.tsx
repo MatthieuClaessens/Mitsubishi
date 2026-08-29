@@ -1,7 +1,8 @@
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import IntroSection from "./components/IntroSection";
-import Specs from "./components/Specs";
+import SpecsSection from "./components/SpecsSection";
+import LegacySection from "./components/LegacySection";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
     <NavBar/>
     <HeroSection/>
     <IntroSection/>
-    <Specs/>
+    <SpecsSection/>
+    <LegacySection/>
     </>
   );
 }
