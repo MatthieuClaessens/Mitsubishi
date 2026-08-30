@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Zen_Dots } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "@/app/components/CustomCursor";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,9 +27,11 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${inter.variable} ${zenDots.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      className={`${inter.variable} ${zenDots.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col font-sans bg-[#050505] cursor-none">
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

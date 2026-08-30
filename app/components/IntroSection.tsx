@@ -1,14 +1,16 @@
 export default function IntroSection() {
     return (
-        <section className="w-full bg-black py-28 px-6 font-sans">
-            <div className="max-w-5xl mx-auto text-center">
-                <h3 className="text-white font-black italic uppercase text-3xl md:text-5xl leading-tight">
+        <section className="w-full bg-[#050505] py-32 px-6 font-sans relative">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+                <h2 className="text-white font-black italic uppercase text-3xl md:text-5xl leading-tight tracking-tight">
                     Aujourd'hui encore, les <span className="text-red-600">Mitsubishi Lancer Evolution</span>
-                </h3>
-                <hr className="bg-red-600 w-20 h-[4px] mt-8 mx-auto border-none" />
-                <p className="text-gray-400 mt-8 text-xl md:text-2xl font-light leading-relaxed">
-                    Retirées de la gamme Mitsubishi en&nbsp;
-                    <span className="text-white underline decoration-red-600 font-bold">2015</span>, elles continuent de captiver l'attention des passionnées d'automobile du monde entier.
+                </h2>
+                
+                <div className="w-20 h-1 bg-red-600 mx-auto"></div>
+                
+                <p className="text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
+                    Retirées de la gamme Mitsubishi en{" "}
+                    <span className="text-white font-bold border-b border-red-600">2015</span> – continuent de captiver l'attention des passionnés d'automobile du monde entier.
                 </p>
             </div>
         </section>

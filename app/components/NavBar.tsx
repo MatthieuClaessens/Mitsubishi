@@ -4,15 +4,15 @@ import Mitsubishi from "@/public/image/mitsubishi.webp";
 
 export default function NavBar() {
     return (
-<nav className="h-16 w-full bg-black flex items-center px-8 font-sans border-b border-zinc-800 z-30 fixed">
-                <Image src={Mitsubishi} alt="Mitsubishi logo" priority className="w-4.5 mx-3"/>
+        <nav className="h-16 w-full bg-black flex items-center px-8 font-sans border-b border-zinc-800 z-30 fixed">
+            <Image src={Mitsubishi} alt="Mitsubishi logo" priority className="w-4.5 mx-3" />
             <p className="font-bold text-white font-display uppercase pointer-events-none">Lancer <span className="text-red-600">Evo</span></p>
             <div className="flex justify-center mx-auto gap-16 uppercase font-bold text-xs tracking-[3px]">
-                <Link href="/" className="text-white hover:text-red-600">Accueil</Link>
-                <Link href="/" className="text-white hover:text-red-600">Specs</Link>
-                <Link href="/" className="text-white hover:text-red-600">L'Héritage</Link>
+                <Link href="/" className="text-white hover:text-red-600 cursor-none">Accueil</Link>
+                <Link href="/" className="text-white hover:text-red-600 cursor-none">Spécifications</Link>
+                <Link href="/" className="text-white hover:text-red-600 cursor-none">L'Héritage Rallye</Link>
             </div>
-            <Link href="/configurer" className="text-white bg-red-600 px-5 py-2 uppercase font-sans font-bold text-xs tracking-[3px] hover:bg-red-700 transition-colors">Configurer</Link>            
+            <Link href="/configurer" className="text-white bg-red-600 px-5 py-2 uppercase font-sans font-bold text-xs tracking-[3px] hover:bg-red-700 transition-colors  cursor-none">Configurer</Link>
         </nav>
     )
 }
