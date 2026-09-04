@@ -113,6 +113,7 @@ export default function SpecsSection() {
                                     className={`h-2 rounded-full transition-all ${index === currentIndex ? 'w-6 bg-red-600' : 'w-2 bg-white/30'}`}
                                     aria-label={`Aller à la vue ${index + 1}`}
                                 />
+                                
                             ))}
                         </div>
                     </div>

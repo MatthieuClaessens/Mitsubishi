@@ -6,7 +6,7 @@ export default function IntroSection() {
                     Aujourd'hui encore, les <span className="text-red-600">Mitsubishi Lancer Evolution</span>
                 </h2>
                 
-                <div className="w-20 h-1 bg-red-600 mx-auto"></div>
+                <div className="w-20 h-1 bg-red-600 mx-auto" aria-hidden="true"></div>
                 
                 <p className="text-gray-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
                     Retirées de la gamme Mitsubishi en{" "}

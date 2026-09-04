@@ -1,6 +1,6 @@
 export default function HeroSection() {
     return (
-        <div className="relative h-screen w-full bg-black overflow-hidden flex items-end pb-24 px-8 lg:px-20">
+        <section id="home" className="relative h-screen w-full bg-black overflow-hidden flex items-end pb-24 px-8 lg:px-20">
             <video
                 src="/video/mitsubishi.mp4"
                 autoPlay
@@ -9,7 +9,7 @@ export default function HeroSection() {
                 playsInline
                 className="absolute inset-0 object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.4),#000)] bg-[size:4px_4px,4px_4px,100%_100%] z-10 pointer-events-none"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.4),#000)] bg-[size:4px_4px,4px_4px,100%_100%] z-10 pointer-events-none" aria-hidden="true"></div>
             
             <div className="relative z-20 w-full max-w-7xl">
                 <p className="text-red-600 font-bold tracking-[0.6em] uppercase mb-4 text-xs md:text-sm">
@@ -19,13 +19,13 @@ export default function HeroSection() {
                     Lancer <span className="text-outline">Evo</span> <span className="text-red-600">X</span>
                 </h1>
                 <div className="flex items-center gap-6 mt-12">
-                    <div className="bg-red-600 w-[4px] h-14 shrink-0"></div>
+                    <div className="bg-red-600 w-[4px] h-14 shrink-0" aria-hidden="true"></div>
                     <p className="text-gray-300 text-3xl font-sans leading-snug">
                         L'essence pure de la performance <span className="text-red-600 font-bold uppercase text-2xl">Japonaise</span>.<br />
                         Turbo MIVEC et S-AWC
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

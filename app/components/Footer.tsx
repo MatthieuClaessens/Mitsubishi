@@ -23,8 +23,8 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white text-sm font-bold uppercase tracking-widest mb-4">Navigation</h4>
                         <ul className="space-y-3 text-sm font-light text-gray-400">
-                            <li><a href="#" className="hover:text-red-600 transition-colors">Spécifications</a></li>
-                            <li><a href="#history" className="hover:text-red-600 transition-colors">Héritage Rallye</a></li>
+                            <li><a href="#specs" className="hover:text-red-600 transition-colors">Spécifications</a></li>
+                            <li><a href="#legacy" className="hover:text-red-600 transition-colors">L'Héritage Rallye</a></li>
                         </ul>
                     </div>
 
@@ -36,9 +36,8 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-white text-sm font-bold uppercase tracking-widest">Conception & Code</h4>
                         <p className="text-gray-400 text-sm font-light">
-                            Développé avec passion par <br />
+                            Développé par <br />
                             <Link 
                                 href="https://matthieuclaessens.vercel.app/" 
                                 target="_blank" 
